@@ -27,7 +27,8 @@ require.config({
 });
 
 require([
-    'backbone'
-], function (Backbone) {
+'backbone', 'routes/url-router'
+], function (Backbone, App) {
+    var app = new App();
     Backbone.history.start();
-});
+})
