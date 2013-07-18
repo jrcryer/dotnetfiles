@@ -25,7 +25,9 @@ require.config({
     }
 });
 
-require([],
+require([
+    '../spec/models/url-model'
+],
 function()  {
     mocha.run();
 });
